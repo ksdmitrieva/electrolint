@@ -1,0 +1,14 @@
+{
+	"issues": {		
+		"OPEN_EXTERNAL_JS_CHECK": "Ensure that external links are served only over the HTTPS protocol.",
+		"AUXCLICK_JS_CHECK" : "Set \"disableBlinkFeatuers\" to \"Auxclick\" in the \"webPreferences\" options to protect the window from executing unwanted JavaScript on the 'click' event.",
+		"CONTEXT_ISOLATION_JS_CHECK": "Set \"contextIsolation\" to \"true\" in the \"webPreferences\" options to protect the application from untrusted code performing prototype pollution of the built-in JavaScript APIs.",
+		"NODE_INTEGRATION_JS_CHECK": "Set \"nodeIntegration\" to \"false\" in the \"webPreferences\" options to prevent malicious code from executing natively in the user's machine.",
+		"LIMIT_NAVIGATION_JS_CHECK": "Is the URL opened in this function provided by the user? If you expect the URL to come from a specific domain or set of domains, check it against a list of trusted origins. If not, limit the navigation to sites served over HTTPS only.",
+		"DANGEROUS_FUNCTIONS_JS_CHECK": "Can the data evaluated in this function be manipulated by the user? If so, validate it against the list of expected values, and then evaluate the hardcoded trusted value or avoid using the evaluation function altogether.",
+		"REMOTE_MODULE_JS_CHECK": "Disable the remote module globally by setting \"enableRemoteModule\" to \"false\" in the \"webPreferences\" options.",
+		"SANDBOX_JS_CHECK": "Set \"sandbox\" to \"true\" in the \"webPreferences\" options to protect ElectronAPIs from being called by untrusted code.",
+		"PRELOAD_JS_CHECK": "Ensure that the preload script does not use the \"app\" instance through the \"remote\" module or the IPC channels to protect the application from abuse by malicious scripts loaded in external context.",
+		"WEBSECURITY_JS_CHECK": "Set \"webSecurity\" to \"true\" in the \"webPreferences\" options."
+	}	
+}

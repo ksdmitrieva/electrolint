@@ -1,0 +1,19 @@
+{
+	"name": "electrolint-server",
+	"description": "Implementation of the Electrolint language server in Node.",
+	"version": "1.0.0",
+	"author": "Ksenia Peguero",
+	"license": "MIT",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"dependencies": {
+		"@doyensec/electronegativity": "^1.6.0",
+		"vscode-languageserver": "^6.1.1",
+		"vscode-languageserver-textdocument": "^1.0.1"
+	}
+}
